@@ -44,6 +44,9 @@
 .w40pc{
     width:40%;
 }
+.w33pc{
+    width:calc(100% / 3);
+}
 .w30pc{
     width:30%;
 }
@@ -104,4 +107,10 @@ label{
 
 .card{
     margin-bottom: 10rem;
+}
+
+/************************** brand **************************/
+
+.prebrand{
+    margin-bottom: 8rem;
 }
