@@ -13,6 +13,9 @@
 .spc-btw{
     justify-content: space-between;
 }
+.wrap{
+    flex-wrap: wrap;
+}
 .fixed{
     position:fixed;
     width:100%;
@@ -86,11 +89,19 @@ h2{
 label{
    margin-right: 2rem;     
 }
-.plan-box{
-    background-color: aqua;   /* da togliere */
+.card-box{
+    background-color: aqua;height:200px;   /* da togliere */
     width:calc((100% - 5rem) / 3);
-    height:200px;
 }
 .plan{
     margin-bottom:8rem;
+}
+/*************************** partner ************************/
+.partner{
+    margin-bottom:8rem;
+}
+/************************** card *****************************/
+
+.card{
+    margin-bottom: 10rem;
 }
