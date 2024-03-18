@@ -5,10 +5,13 @@
     margin:0;
 }
 .container{
-    width:100vw;
+    width:100%;
 }
 .flex-container{
     display:flex;
+}
+.spc-btw{
+    justify-content: space-between;
 }
 .fixed{
     position:fixed;
@@ -26,19 +29,34 @@
 .m-auto{
     margin: auto;
 }
+.w70pc{
+    width:70%;
+}
 .w60pc{
     width:60%;
+}
+.w50pc{
+    width: 50%;
+}
+.w40pc{
+    width:40%;
 }
 .w30pc{
     width:30%;
 }
-.m-top-bottom{
+.m2-top-bottom{
     margin:2rem 0;
+}
+.m4-top-bottom{
+    margin:4rem 0;
 }
 h1{
     font-size: 4.5rem;
     font-weight:800;
-    margin-bottom:4.5rem;
+}
+h2{
+    font-size:2rem;
+    font-weight:700;
 }
 .align-vertical{
     align-items: center;
@@ -60,6 +78,19 @@ h1{
 /****************************************** jumbotron *********************************/
 .jumbotron{
     background-color: rgb(180, 208, 231);
-    width:100vw;
     padding-top:10rem;
+    margin-bottom:8rem;
+
+}
+/******************************* plan *******************************/
+label{
+   margin-right: 2rem;     
+}
+.plan-box{
+    background-color: aqua;   /* da togliere */
+    width:calc((100% - 5rem) / 3);
+    height:200px;
+}
+.plan{
+    margin-bottom:8rem;
 }
