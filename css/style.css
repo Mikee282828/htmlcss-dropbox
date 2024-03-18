@@ -126,3 +126,11 @@ label{
 .questions{
     padding:2rem 0;
 }
+/************************** footer **************************/
+footer{
+    background-color: black;
+    color:white;
+}
+.footer-sezioni{
+    width:calc((100% - 1rem) / 5);
+}
