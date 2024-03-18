@@ -4,3 +4,35 @@
     padding:0;
     margin:0;
 }
+.container{
+    width:100vw;
+}
+.flex-container{
+    display:flex;
+}
+.fixed{
+    position:fixed;
+    top:0;
+    left:0;
+}
+.cta{
+    background-color: rgb(0, 97, 255);
+    text-decoration: none;
+    color:white;
+    padding:0.5rem 1rem;
+}
+
+/******************************************** debug *********************************************/
+.navbar.debug{
+    width:100vw;
+}
+
+/****************************************** navbar *****************************************/
+.navbar-container{
+    color:rgb(139, 139, 139);
+    padding:1rem;
+}
+.navbar{
+    justify-content: space-between;
+    background-color: white;
+}
