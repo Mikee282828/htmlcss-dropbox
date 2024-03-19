@@ -323,6 +323,7 @@ label{
 .questions{
     padding-top:3rem;
     padding-bottom:3rem;
+    cursor:default;
 }
 .hidden{
     display: none;
@@ -341,4 +342,7 @@ footer{
 }
 .footer-sezioni{
     width:calc((100% - var(--little-space)) / 5);
+}
+.lingua{
+    color:grey;
 }
