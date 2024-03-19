@@ -15,11 +15,18 @@
 .flex-container{
     display:flex;
 }
+.flex-center{
+    align-items: center;
+    justify-content: center;
+}
 .spc-btw{
     justify-content: space-between;
 }
 .wrap{
     flex-wrap: wrap;
+}
+.row-2rem-gap{
+    row-gap: var(--normal-space);
 }
 .fixed{
     position:fixed;
@@ -33,12 +40,12 @@
     color:white;
     padding:0.5rem 1rem;
     display: inline-block;
+    cursor: pointer;
 }
 .cta-white{
     color:black;
     border:solid black 1px;
     background-color: white;
-    cursor: pointer;
 }
 .no-border{
     border:none;
@@ -73,6 +80,9 @@
 .w8rem{
     width:8rem;
 }
+.w7rem{
+    width:7rem;
+}
 .w4rem{
     width:4rem;
 }
@@ -81,6 +91,10 @@
 }
 .p2rem{
     padding:var(--normal-space);
+}
+.p2rem-left-right{
+    padding-left:2rem;
+    padding-right:2rem;
 }
 .p2rem-bottom{
     padding-bottom:2rem;
@@ -188,6 +202,9 @@ label{
     border:solid black 1px;
          
 }
+.no-border.card-box{
+    border:none;
+}
 .w100pc.card-box{
     width:100%;
 }
@@ -232,6 +249,39 @@ label{
 .postBrand{
    background-color: rgb(180, 208, 231);
    padding:var(--large-space) 0;
+}
+.height-company{
+    height:calc(100vw / 6);
+}
+.brand .green{
+    background-color: rgb(162, 211, 155);
+}
+.brand .brown{
+    background-color:rgb(97, 8, 43);
+}
+.brand .sky-blue{
+    background-color: rgb(0, 147, 206);
+}
+.brand .vibrant-red{
+    background-color: rgb(255, 28, 28);
+}
+.brand .red{
+    background-color: rgb(213, 0, 31);
+}
+.brand .light-blue{
+    background-color: rgb(180, 208, 231);
+}
+.brand .blue{
+    background-color: rgb(13, 36, 129);
+}
+.brand .yellow{
+    background-color: rgb(255, 216, 48);
+}
+[alt="company"]{
+    filter: brightness(0) invert(1);
+}
+.Designit{
+    background-color: rgb(245, 245, 245);
 }
 /*************************** faq ********************************/
 .faq{
