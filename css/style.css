@@ -1,4 +1,5 @@
 :root{
+    --little-space:1rem;
     --normal-space:2rem;
     --medium-space:4rem;
     --large-space:8rem;
@@ -87,10 +88,13 @@
     width:4rem;
 }
 .p1rem{
-    padding:1rem;
+    padding:var(--little-space);
 }
 .p2rem{
     padding:var(--normal-space);
+}
+.p2rem-top{
+    padding-top:var(--normal-space);
 }
 .p2rem-left-right{
     padding-left:2rem;
@@ -100,13 +104,13 @@
     padding-bottom:2rem;
 }
 .p1rem-bottom{
-    padding-bottom: 1rem    ;
+    padding-bottom: var(--little-space);
 }
 .m1-bottom{
-    margin-bottom:1rem;
+    margin-bottom:var(--little-space);
 }
 .m1-top{
-    margin-top:1rem;
+    margin-top:var(--little-space);
 }
 .m2-bottom{
     margin-bottom:var(--normal-space);
@@ -117,8 +121,12 @@
 .m4-bottom{
     margin-bottom:var(--medium-space);
 }
+.m4-top{
+    margin-top:var(--medium-space);
+}
 .m1-top-bottom{
-    margin:1rem 0;
+    margin-top:var(--little-space);
+    margin-bottom:var(--little-space);
 }
 .m2-top-bottom{
     margin:var(--normal-space) 0;
@@ -128,7 +136,7 @@
 }
 h1{
     font-size: 4.5rem;
-    font-weight:800;
+    font-weight:900;
 }
 h2{
     font-size:var(--normal-space);
@@ -170,7 +178,7 @@ hr.grey{
     height:100%;
     display:flex;
     align-items:center;
-    padding:1rem;
+    padding:var(--little-space);
     cursor: pointer;
     border-bottom:white solid 1px;
 }
@@ -198,7 +206,7 @@ label{
    margin-right: var(--normal-space);     
 }
 .card-box{
-    width:calc((100% - 5rem) / 3);
+    width:calc((100% - 3rem) / 3);
     border:solid black 1px;
          
 }
@@ -223,7 +231,7 @@ label{
     gap:0.5rem;
 }
 .feature>.icon{
-    width:1rem;
+    width:var(--little-space);
 }
 .feature>.blue{
     color:rgb(7, 97, 255)
@@ -288,7 +296,17 @@ label{
     padding:var(--large-space) 0;
 }
 .questions{
-    padding:var(--normal-space) 0;
+    padding-top:3rem;
+    padding-bottom:3rem;
+}
+.hidden{
+    display: none;
+}
+.questions:hover + .hidden{
+    display:block;
+}
+.questions:hover .fa-chevron-down{
+    transform: rotate(180deg);
 }
 /************************** footer **************************/
 footer{
@@ -297,5 +315,5 @@ footer{
     padding-top:var(--medium-space);
 }
 .footer-sezioni{
-    width:calc((100% - 1rem) / 5);
+    width:calc((100% - var(--little-space)) / 5);
 }
