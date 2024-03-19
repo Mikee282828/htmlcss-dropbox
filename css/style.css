@@ -49,6 +49,9 @@
 .w100pc{
     width: 100%;
 }
+.w80pc{
+    width:80%;
+}
 .w70pc{
     width:70%;
 }
@@ -76,17 +79,26 @@
 .p1rem{
     padding:1rem;
 }
-.p1rem-bottom{
-    padding-bottom: 1rem    ;
+.p2rem{
+    padding:var(--normal-space);
 }
 .p2rem-bottom{
     padding-bottom:2rem;
 }
+.p1rem-bottom{
+    padding-bottom: 1rem    ;
+}
 .m1-bottom{
     margin-bottom:1rem;
 }
+.m1-top{
+    margin-top:1rem;
+}
 .m2-bottom{
     margin-bottom:var(--normal-space);
+}
+.m2-top{
+    margin-top:var(--normal-space);
 }
 .m4-bottom{
     margin-bottom:var(--medium-space);
