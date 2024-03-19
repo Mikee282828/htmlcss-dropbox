@@ -46,6 +46,9 @@
 .m-auto{
     margin: auto;
 }
+.w100pc{
+    width: 100%;
+}
 .w70pc{
     width:70%;
 }
@@ -67,6 +70,18 @@
 .w8rem{
     width:8rem;
 }
+.w4rem{
+    width:4rem;
+}
+.p1rem{
+    padding:1rem;
+}
+.p1rem-bottom{
+    padding-bottom: 1rem    ;
+}
+.p2rem-bottom{
+    padding-bottom:2rem;
+}
 .m1-bottom{
     margin-bottom:1rem;
 }
@@ -75,6 +90,9 @@
 }
 .m4-bottom{
     margin-bottom:var(--medium-space);
+}
+.m1-top-bottom{
+    margin:1rem 0;
 }
 .m2-top-bottom{
     margin:var(--normal-space) 0;
@@ -90,6 +108,9 @@ h2{
     font-size:var(--normal-space);
     font-weight:700;
 }
+h3{
+    font-size:1.5rem;
+}
 hr{
     height:1px;
     border:none;
@@ -101,12 +122,18 @@ hr{
 .align-vertical{
     align-items: center;
 }
+.txt-align-center{
+    text-align: center;
+}
 .brown{
     color:rgb(97, 8, 43);
 }
+hr.grey{
+    background-color: rgba(128, 128, 128, 0.56);
+}
 .font-size-3rem{
     font-size: 3rem;
-}   
+} 
 
 /******************************************** debug *********************************************/
 
@@ -129,10 +156,14 @@ hr{
     background-color: white;
     width:100vw;
 }
+[alt="jumbo"]{
+    width:110%;
+    margin-bottom:-5rem;
+}
 /****************************************** jumbotron *********************************/
 .jumbotron{
     background-color: rgb(180, 208, 231);
-    padding-top:var(--large-space);
+    padding-top:var(--medium-space);
     margin-bottom:var(--large-space);
 
 }
@@ -141,12 +172,35 @@ label{
    margin-right: var(--normal-space);     
 }
 .card-box{
-    background-color: aqua;height:600px; border:solid black 1px;    /* da togliere */
     width:calc((100% - 5rem) / 3);
+    border:solid black 1px;
          
+}
+.w100pc.card-box{
+    width:100%;
 }
 .plan{
     margin-bottom:var(--large-space);
+}
+.type{
+    text-align: center;
+    padding:0.5rem;
+    border-bottom:solid black 1px;
+}
+.per-month{
+    color:grey;
+}
+.plan .feature{
+    gap:0.5rem;
+}
+.feature>.icon{
+    width:1rem;
+}
+.feature>.blue{
+    color:rgb(7, 97, 255)
+}
+.feature>.description{
+    width:calc(100% - 1.5rem)
 }
 /*************************** partner ************************/
 .partner{
