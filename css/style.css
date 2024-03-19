@@ -1,3 +1,8 @@
+:root{
+    --normal-space:2rem;
+    --medium-space:4rem;
+    --large-space:8rem;
+}
 *{
     box-sizing: border-box;
     font-family: sans-serif;
@@ -33,6 +38,7 @@
     color:black;
     border:solid black 1px;
     background-color: white;
+    cursor: pointer;
 }
 .no-border{
     border:none;
@@ -58,25 +64,39 @@
 .w30pc{
     width:30%;
 }
+.w8rem{
+    width:8rem;
+}
+.m1-bottom{
+    margin-bottom:1rem;
+}
 .m2-bottom{
-    margin-bottom:2rem;
+    margin-bottom:var(--normal-space);
 }
 .m4-bottom{
-    margin-bottom:4rem;
+    margin-bottom:var(--medium-space);
 }
 .m2-top-bottom{
-    margin:2rem 0;
+    margin:var(--normal-space) 0;
 }
 .m4-top-bottom{
-    margin:4rem 0;
+    margin:var(--medium-space) 0;
 }
 h1{
     font-size: 4.5rem;
     font-weight:800;
 }
 h2{
-    font-size:2rem;
+    font-size:var(--normal-space);
     font-weight:700;
+}
+hr{
+    height:1px;
+    border:none;
+    background-color:black;
+}
+.bkg-white{
+    background-color:white;
 }
 .align-vertical{
     align-items: center;
@@ -94,7 +114,15 @@ h2{
 /****************************************** navbar *****************************************/
 .navbar-container{
     color:rgb(139, 139, 139);
+    height:100%;
+    display:flex;
+    align-items:center;
     padding:1rem;
+    cursor: pointer;
+    border-bottom:white solid 1px;
+}
+.navbar-container:hover{
+    border-bottom:black solid 1px;
 }
 .navbar{
     justify-content: space-between;
@@ -104,51 +132,53 @@ h2{
 /****************************************** jumbotron *********************************/
 .jumbotron{
     background-color: rgb(180, 208, 231);
-    padding-top:10rem;
-    margin-bottom:8rem;
+    padding-top:var(--large-space);
+    margin-bottom:var(--large-space);
 
 }
 /******************************* plan *******************************/
 label{
-   margin-right: 2rem;     
+   margin-right: var(--normal-space);     
 }
 .card-box{
-    background-color: aqua;height:200px;   /* da togliere */
+    background-color: aqua;height:600px; border:solid black 1px;    /* da togliere */
     width:calc((100% - 5rem) / 3);
+         
 }
 .plan{
-    margin-bottom:8rem;
+    margin-bottom:var(--large-space);
 }
 /*************************** partner ************************/
 .partner{
-    margin-bottom:8rem;
+    margin-bottom:var(--large-space);
 }
 /************************** card *****************************/
 
 .card{
-    margin-bottom: 10rem;
+    margin-bottom: var(--large-space);
 }
 
 /************************** brand **************************/
 
 .preBrand{
-    margin-bottom: 8rem;
+    margin-bottom: var(--large-space);
 }
 .postBrand{
    background-color: rgb(180, 208, 231);
-   padding:8rem 0;
+   padding:var(--large-space) 0;
 }
 /*************************** faq ********************************/
 .faq{
-    padding:8rem 0;
+    padding:var(--large-space) 0;
 }
 .questions{
-    padding:2rem 0;
+    padding:var(--normal-space) 0;
 }
 /************************** footer **************************/
 footer{
     background-color: black;
     color:white;
+    padding-top:var(--medium-space);
 }
 .footer-sezioni{
     width:calc((100% - 1rem) / 5);
