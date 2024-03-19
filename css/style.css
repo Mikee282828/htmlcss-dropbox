@@ -291,6 +291,31 @@ label{
 .Designit{
     background-color: rgb(245, 245, 245);
 }
+/*********************************************** color hover *************************************/
+.green:hover{
+    border:1rem rgb(209, 233, 205) solid;
+}
+.brown:hover{
+    border:1rem rgb(144, 30, 93) solid;
+}
+.sky-blue:hover{
+    border:1rem rgb(47, 169, 255) solid;
+}
+.vibrant-red:hover{
+    border:1rem rgb(255, 50, 78) solid;
+}
+.red:hover{
+    border:1rem rgb(255, 22, 81) solid;
+}
+.light-blue:hover{
+    border:1rem rgb(227, 230, 255) solid;
+}
+.blue:hover{
+    border:1rem rgb(60, 58, 179) solid;
+}
+.yellow:hover{
+    border:1rem rgb(255, 238, 98) solid;
+}
 /*************************** faq ********************************/
 .faq{
     padding:var(--large-space) 0;
