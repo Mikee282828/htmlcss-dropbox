@@ -263,9 +263,14 @@ label{
    background-color: rgb(180, 208, 231);
    padding:var(--large-space) 0;
 }
-.height-company{
+.heigth-company{
     height:calc(100vw / 6);
     min-height: 197px;
+}
+@supports (aspect-ratio:1){
+    .height-company{
+        aspect-ratio: 1;
+    }
 }
 .brand .green{
     background-color: rgb(162, 211, 155);
