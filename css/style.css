@@ -181,7 +181,7 @@ hr.grey{
 }
 
 /****************************************** navbar *****************************************/
-.navbar-container{
+.navbar-container,.logo-container{
     color:rgb(139, 139, 139);
     height:100%;
     display:flex;
