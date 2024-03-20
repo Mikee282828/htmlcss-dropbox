@@ -176,6 +176,9 @@ hr.grey{
 .no-border{
     border:none;
 }
+.color-black{
+    color:black;
+}
 
 /****************************************** navbar *****************************************/
 .navbar-container{
