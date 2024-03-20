@@ -299,9 +299,10 @@ label{
 [alt="company"]{
     filter: brightness(0) invert(1);
 }
-.Designit{
-    background-color: rgb(245, 245, 245);
+.mid-section{
+    background-color: rgb(245, 245, 245);   
 }
+
 /****************************************** color hover ******************************************/
 .brand .green:hover{
     border:1rem rgb(209, 233, 205) solid;
