@@ -305,21 +305,38 @@ label{
 .mid-section{
     background-color: rgb(245, 245, 245);   
 }
-.designit-mid,.arizona-mid,.florida-mid,.topps-mid,.world_bicycle-mid,.hearst_corp-mid,.lonely_planet-mid,.clear_channel-mid{
-    display: none;
-}
 /***************************************** has *****************************************/
-.companies:has(.designit:hover) + .mid-section .designit-mid,
-.companies:has(.arizona:hover) + .mid-section .arizona-mid,
-.companies:has(.florida:hover) + .mid-section .florida-mid,
-.companies:has(.topps:hover) + .mid-section .topps-mid,
+@supports selector(:has(*)){
+    
+    .companies:has(.designit:hover) + .mid-section .designit-mid,
+    .companies:has(.arizona:hover) + .mid-section .arizona-mid,
+    .companies:has(.florida:hover) + .mid-section .florida-mid,
+    .companies:has(.topps:hover) + .mid-section .topps-mid,
+    
+    .mid-section:has(+ .companies .world_bicycle:hover) .world_bicycle-mid,
+    .mid-section:has(+ .companies .hearst_corp:hover) .hearst_corp-mid,
+    .mid-section:has(+ .companies .lonely_planet:hover) .lonely_planet-mid,
+    .mid-section:has(+ .companies .clear_channel:hover) .clear_channel-mid
+    {
+        display:block;
+    }
 
-.mid-section:has(+ .companies .world_bicycle:hover) .world_bicycle-mid,
-.mid-section:has(+ .companies .hearst_corp:hover) .hearst_corp-mid,
-.mid-section:has(+ .companies .lonely_planet:hover) .lonely_planet-mid,
-.mid-section:has(+ .companies .clear_channel:hover) .clear_channel-mid
-{
-    display:block;
+    .designit-mid,.arizona-mid,.florida-mid,.topps-mid,
+    .world_bicycle-mid,.hearst_corp-mid,.lonely_planet-mid,
+    .clear_channel-mid
+    {
+        display: none;
+    }
+
+}
+@supports not selector(:has(*)){
+
+    .arizona-mid,.florida-mid,.topps-mid,
+    .world_bicycle-mid,.hearst_corp-mid,
+    .lonely_planet-mid,.clear_channel-mid
+    {
+        display: none;
+    }
 }
 /****************************************** color hover ******************************************/
 .brand .green:hover{
